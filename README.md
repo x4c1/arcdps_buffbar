@@ -1,30 +1,34 @@
 # arcdps_buffbar
 
+<img width="512" height="384" alt="arcdps_buffbar" src="https://github.com/user-attachments/assets/a4a4e7ff-7850-43ef-8736-4bb738df3202" />
+
+<br/><br/>
 `arcdps_buffbar` is an ArcDPS addon for Guild Wars 2 that provides a customizable self-buff overlay.
-It is meant for tracking boons, auras, and other effects with clearer presentation than the default UI.
 
 The overlay can show:
 
-- pinned boons, auras, and effects
+- most effects: boons, auras, relics, skill effects, etc
 - stack counts
 - visible remaining-duration timers
 - duration bars
-- source indicators for self-applied vs ally-applied effects
+- source indicators (dots) for self vs ally-applied effects
 - horizontal or vertical layouts
 
-## Installation
+
+### Installation
 
 1. Install ArcDPS for Guild Wars 2.
 2. Download `arcdps_buffbar.dll`.
-3. Place the DLL in your ArcDPS addon folder:
+3. Place the DLL in your GW2 addon folder:
 
 ```text
-Guild Wars 2\addons\arcdps\arcdps_buffbar.dll
+Guild Wars 2\addons\arcdps_buffbar.dll
 ```
 
 Restart Guild Wars 2 after installing or updating the addon.
 
-## Files
+
+### Files
 
 The addon stores settings and cache files under:
 
@@ -44,17 +48,16 @@ The icon and effect cache is stored in:
 Guild Wars 2\addons\arcdps_buffbar\cache\
 ```
 
-The cache contains downloaded effect icons and resolved effect metadata used to avoid repeated Guild Wars 2 Wiki lookups. It is safe to delete the cache folder; missing files will be recreated as needed.
 
-## Configuration
+### Configuration
 
 Open the ArcDPS options panel and find the `arcdps_buffbar` tab.
 
-The most important setting is the overlay mode:
+The important setting is the overlay mode:
 
 - `Off`: hides the buff bar.
 - `On`: shows your pinned effects.
-- `Configure`: opens a picker of currently active effects so you can add or remove pins.
+- `Configure`: opens a picker of currently active effects so you can add or remove pins. Requires having the active effect.
 
 Pins are the effects the buff bar tracks. In normal mode, the overlay only shows pinned effects. If a pinned effect is inactive, it stays in its slot as a dimmed icon.
 

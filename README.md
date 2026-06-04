@@ -17,8 +17,8 @@ The overlay can show:
 
 ### Installation
 
-1. Install ArcDPS for Guild Wars 2.
-2. Download `arcdps_buffbar.dll`.
+1. Install [ArcDPS](https://www.deltaconnected.com/arcdps/) for Guild Wars 2.
+2. Download `arcdps_buffbar.dll` from the releases section.
 3. Place the DLL in your GW2 addon folder:
 
 ```text

@@ -3,16 +3,18 @@
 <img width="512" height="384" alt="arcdps_buffbar" src="https://github.com/user-attachments/assets/a4a4e7ff-7850-43ef-8736-4bb738df3202" />
 
 <br/><br/>
-`arcdps_buffbar` is an ArcDPS addon for Guild Wars 2 that provides a customizable self-buff overlay.
+`arcdps_buffbar` is an ArcDPS addon for Guild Wars 2 that provides customizable self-buff overlays.
 
 The overlay can show:
 
+- multiple independent buff bars
 - most effects: boons, auras, relics, skill effects, etc
 - stack counts
 - visible remaining-duration timers
 - duration bars
 - source indicators (dots) for self vs ally-applied effects
 - horizontal or vertical layouts
+- per-bar pin lists, layout, lock state, title bar, and position
 
 
 ### Installation
@@ -26,6 +28,48 @@ Guild Wars 2\addons\arcdps_buffbar.dll
 ```
 
 Restart Guild Wars 2 after installing or updating the addon.
+
+
+### Configuration
+
+Open the ArcDPS options panel and find the `arcdps_buffbar` tab.
+
+The important setting is the overlay mode:
+
+- `Off`: hides all buff bars.
+- `On`: shows your enabled buff bars.
+- `Configure`: opens `Configure Mode - Active Effects` window, a floating picker of currently active effects.
+
+Pins are the effects a buff bar tracks. In normal mode, each enabled bar only shows its own pinned effects. If a pinned effect is inactive, it stays in its slot as a dimmed icon.
+
+Each bar has its own pins and layout settings, including name, enabled state, icon size, spacing, opacity, lock state, horizontal or vertical orientation, title bar visibility, and screen position.
+
+In configure mode, every enabled buff bar temporarily shows its title bar. Changes in the configuration panel apply to the selected bar.
+
+To populate pins:
+
+1. Set the overlay to `Configure`.
+2. Apply or receive the boon, aura, or effect you want to track.
+3. Select the buff bar you want to edit by grabbing its title bar.
+4. Click or drag an effect in `Configure Mode` window to pin or unpin it on the selected bar.
+6. Switch the overlay back to `On`.
+
+You can also manage pins directly on the bars while in configure mode:
+
+- right-click a bar title to lock/unlock that bar
+- right-click a pinned icon for remove actions
+- drag pinned icons left, right, up, or down to reorder them
+- drag pinned icons between buff bars to move them
+
+You can also add pins manually by entering an effect ID in the Pins section. The Known Effects window can help find common effect IDs.
+
+Pin scope controls where pins apply:
+
+- `Global`: same pins everywhere.
+- `Current profession`: separate pins per profession.
+- `Current elite specialization`: separate pins per elite specialization.
+
+Other options control icon size, spacing, opacity, orientation, timer text, duration bars, stack text, source indicators, and whether unknown effects are shown.
 
 
 ### Files
@@ -49,33 +93,3 @@ Guild Wars 2\addons\arcdps_buffbar\cache\
 ```
 
 
-### Configuration
-
-Open the ArcDPS options panel and find the `arcdps_buffbar` tab.
-
-The important setting is the overlay mode:
-
-- `Off`: hides the buff bar.
-- `On`: shows your pinned effects.
-- `Configure`: opens a picker of currently active effects so you can add or remove pins. Requires having the active effect.
-
-Pins are the effects the buff bar tracks. In normal mode, the overlay only shows pinned effects. If a pinned effect is inactive, it stays in its slot as a dimmed icon.
-
-To populate pins:
-
-1. Set the overlay to `Configure`.
-2. Apply or receive the boon, aura, or effect you want to track.
-3. Click the effect in the configure picker to pin it.
-4. Switch the overlay back to `On`.
-
-You can also add pins manually by entering an effect ID in the Pins section. The Known Effects window can help find common effect IDs.
-
-Pin scope controls where pins apply:
-
-- `Global`: same pins everywhere.
-- `Current profession`: separate pins per profession.
-- `Current elite specialization`: separate pins per elite specialization.
-
-Other options control icon size, spacing, opacity, orientation, timer text, duration bars, stack text, source indicators, and whether unknown effects are shown.
-
-When the overlay is unlocked, you can move it by dragging the buff bar. Right-click the unlocked overlay for quick lock and save actions.

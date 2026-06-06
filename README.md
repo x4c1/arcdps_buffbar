@@ -54,14 +54,14 @@ To populate pins:
 4. Click or drag an effect in `Configure Mode` window to pin or unpin it on the selected bar.
 6. Switch the overlay back to `On`.
 
-You can also manage pins directly on the bars while in configure mode:
+Manage pins directly on the bars while in configure mode:
 
 - right-click a bar title to lock/unlock that bar
 - right-click a pinned icon for remove actions
 - drag pinned icons left, right, up, or down to reorder them
 - drag pinned icons between buff bars to move them
 
-You can also add pins manually by entering an effect ID in the Pins section. The Known Effects window can help find common effect IDs.
+Add pins manually by entering an effect ID in the Pins section. The Known Effects window can help find common effect IDs.
 
 Pin scope controls where pins apply:
 

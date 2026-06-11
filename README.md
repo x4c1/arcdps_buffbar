@@ -10,7 +10,7 @@ The overlay can show:
 
 - multiple independent buff bars
 - most effects: boons, auras, relics, conditions, etc
-- skill bar slot cooldowns
+- weapon/profession/utility slot cooldowns
 - stack counts
 - visible remaining-duration timers
 - duration bars

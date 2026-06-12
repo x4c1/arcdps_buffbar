@@ -1,7 +1,7 @@
 # arcdps_buffbar
 
 <img width="400" alt="arcdps_buffbar" src="https://github.com/user-attachments/assets/a4a4e7ff-7850-43ef-8736-4bb738df3202" />
-<img width="400" alt="skillbars" src="https://github.com/user-attachments/assets/9b61845c-c814-48bb-84b6-7d1ff4c3b856" />
+<img width="440" alt="skillbars" src="https://github.com/user-attachments/assets/9b61845c-c814-48bb-84b6-7d1ff4c3b856" />
 <br/><br/>
 
 `arcdps_buffbar` is an ArcDPS addon for Guild Wars 2 that provides customizable self-buff overlays.

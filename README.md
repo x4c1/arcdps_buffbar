@@ -52,14 +52,13 @@ To populate pins:
 2. Apply or receive the boon, aura, or effect you want to track.
 3. Select the buff bar you want to edit by grabbing its title bar.
 4. Click or drag an effect in `Configure Mode` window to pin or unpin it on the selected bar.
-6. Switch the overlay back to `On`.
+6. Switch the overlay back to `On` or close the Configure bar.
 
 Manage pins directly on the bars while in configure mode:
 
 - right-click a bar title to lock/unlock that bar
 - right-click a pinned icon for remove actions
-- drag pinned icons left, right, up, or down to reorder them
-- drag pinned icons between buff bars to move them
+- drag pinned icons between bars
 
 Add pins manually by entering an effect ID in the Pins section. The Known Effects window can help find common effect IDs.
 
@@ -69,16 +68,10 @@ Pin scope controls where pins apply:
 - `Current profession`: separate pins per profession.
 - `Current elite specialization`: separate pins per elite specialization.
 
-Other options control icon size, spacing, opacity, orientation, timer text, duration bars, stack text, source indicators, and whether unknown effects are shown.
+Other options control icon size, spacing, opacity, bar orientation, timer text, duration bars, stack text, effect source indicators.
 
 
 ### Files
-
-The addon stores settings and cache files under:
-
-```text
-Guild Wars 2\addons\arcdps_buffbar\
-```
 
 The main settings file is:
 
